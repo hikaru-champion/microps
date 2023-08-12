@@ -1,10 +1,12 @@
 APPS = 
 
-DRIVERS = 
+DRIVERS = drive/dummy.o \ 
 
 OBJS = util.o \
+       net.o
 
 TESTS = test/step0.exe \
+		test/step1.exe \
 
 CFLAGS := $(CFLAGS) -g -W -Wall -Wno-unused-parameter -iquote .
 

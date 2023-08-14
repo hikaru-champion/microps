@@ -128,7 +128,7 @@ net_shutdown(void)
 	for (dev = devices; dev; dev = dev->next) {
 		net_device_close(dev);
 	}
-	intr_shutdonw();
+	intr_shutdown();
 	debugf("shutting down");
 }
 

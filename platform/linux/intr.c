@@ -26,8 +26,7 @@ static pthread_t tid;
 static pthread_barrier_t barrier;
 
 int
-intr_request_irq(unsigned int irq, int (*handler)(unsigned int irq, void *dev), int flags, const char *name, v
-oid *dev)
+intr_request_irq(unsigned int irq, int (*handler)(unsigned int irq, void *dev), int flags, const char *name, void *dev)
 {
 	struct irq_entry *entry;
 
